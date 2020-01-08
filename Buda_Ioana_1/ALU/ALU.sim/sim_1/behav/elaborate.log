@@ -1,0 +1,11 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 9b2cadfcc78d48318bcde68fb74ec12b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DivisionTest_behav xil_defaultlib.DivisionTest -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <Divis> does not exist in entity <Division>.  Please compare the definition of block <Division> to its component declaration and its instantion to detect the mismatch. [C:/Users/Ioana/Desktop/DivisionTest.vhd:19]
+ERROR: [VRFC 10-664] expression has 8 elements ; expected 16 [C:/Users/Ioana/Desktop/DivisionTest.vhd:20]
+ERROR: [VRFC 10-718] formal port <Done> does not exist in entity <Division>.  Please compare the definition of block <Division> to its component declaration and its instantion to detect the mismatch. [C:/Users/Ioana/Desktop/DivisionTest.vhd:21]
+ERROR: [VRFC 10-664] expression has 4 elements ; expected 8 [C:/Users/Ioana/Desktop/DivisionTest.vhd:22]
+ERROR: [VRFC 10-664] expression has 4 elements ; expected 8 [C:/Users/Ioana/Desktop/DivisionTest.vhd:23]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit divisiontest in library work failed.
