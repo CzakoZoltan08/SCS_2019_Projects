@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Division
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ioana/Desktop/DivisionTest.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DivisionTest
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ioana/Downloads/DivisionTest.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DivisionTest
