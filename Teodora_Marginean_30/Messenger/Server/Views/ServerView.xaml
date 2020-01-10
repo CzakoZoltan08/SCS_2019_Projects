@@ -1,0 +1,80 @@
+﻿<Window x:Class="Server.Views.ServerView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Server.Views"
+        xmlns:converters="clr-namespace:Server.Converters"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:viewModels="clr-namespace:Server.ViewModels"
+        mc:Ignorable="d"
+        Title="Server" Height="450" Width="800">
+    <Window.Resources>
+        <converters:BoolToServerStatusConverter x:Key="BoolToStatusConverter"/>
+        <converters:BoolToConnectionStatusConverter x:Key="BoolToConnectionStatusConverter"/>
+        <converters:StatusToColorConverter x:Key="ColorConverter"/>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="3"></Setter>
+            <Setter Property="Padding" Value="3"></Setter>
+        </Style>
+        <Style TargetType="xctk:IntegerUpDown">
+            <Setter Property="Margin" Value="3"></Setter>
+            <Setter Property="Padding" Value="3"></Setter>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Width" Value="120"></Setter>
+            <Setter Property="Margin" Value="3"></Setter>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="70"></Setter>
+            <Setter Property="Margin" Value="3"></Setter>
+        </Style>
+        <Style TargetType="ListBox">
+            <Setter Property="Margin" Value="3"></Setter>
+        </Style>
+    </Window.Resources>
+    <DockPanel Margin="0 10 0 0">
+        <StatusBar Name="StatusBar" DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <TextBlock Text="{Binding Path=(viewModels:ServerViewModel.IsServerActive), Converter={StaticResource BoolToStatusConverter}}"
+                           Background="{Binding Path=(viewModels:ServerViewModel.IsServerActive), Converter={StaticResource ColorConverter}}"/>
+            </StatusBarItem>
+            <StatusBarItem>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Active users: " Width="auto"/>
+                    <TextBlock Text="{Binding Path=(viewModels:ServerViewModel.ClientCount)}" Width="auto"/>
+                </StackPanel>
+            </StatusBarItem>
+        </StatusBar>
+        <DockPanel IsEnabled="{Binding Path=(viewModels:ServerViewModel.IsServerActive)}" DockPanel.Dock="Right" Width="auto">
+            <TextBlock DockPanel.Dock="Top" Text="Active Users" TextAlignment="Center"/>
+            <ListBox ItemsSource="{Binding Path=(viewModels:ServerViewModel.ActiveClients)}" DisplayMemberPath="User.Username"/>
+        </DockPanel>
+        <Grid Name="GridControl" DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="0" Grid.Row="0" Text="Socket Address"/>
+            <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Path=(viewModels:ServerViewModel.IpAddress), UpdateSourceTrigger=PropertyChanged}"
+                     IsEnabled="{Binding Path=(viewModels:ServerViewModel.IsNotActive)}"/>
+            <xctk:IntegerUpDown Grid.Column="2" Grid.Row="0" Text="{Binding Path=(viewModels:ServerViewModel.Port), UpdateSourceTrigger=PropertyChanged}"
+                                Width="70" IsEnabled="{Binding Path=(viewModels:ServerViewModel.IsNotActive)}"/>
+
+            <Button Grid.Column="3" Grid.Row="0" Grid.RowSpan="2"
+                    Content="{Binding Path=(viewModels:ServerViewModel.IsNotActive), Converter={StaticResource BoolToConnectionStatusConverter}}"
+                    x:Name="ConnectDisconnect"
+                    />
+        </Grid>
+        <ListBox ItemsSource="{Binding Path=(viewModels:ServerViewModel.MessageLogs)}"/>
+    </DockPanel>
+</Window>

@@ -1,0 +1,613 @@
+
+*** Running vivado
+    with args -log AluUnit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AluUnit.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source AluUnit.tcl -notrace
+Command: synth_design -top AluUnit -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17264 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 327.461 ; gain = 117.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AluUnit' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:49]
+WARNING: [Synth 8-614] signal 'operatie_aleasa' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:204]
+WARNING: [Synth 8-614] signal 'adunare' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:204]
+WARNING: [Synth 8-614] signal 'scadere' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:204]
+WARNING: [Synth 8-614] signal 'andresult' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:204]
+WARNING: [Synth 8-614] signal 'orresult' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:204]
+WARNING: [Synth 8-614] signal 'notresult' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:204]
+WARNING: [Synth 8-614] signal 'rotateResult' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:204]
+WARNING: [Synth 8-614] signal 'rotateresult2' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:204]
+WARNING: [Synth 8-614] signal 'multresult' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:204]
+WARNING: [Synth 8-614] signal 'oldData' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:204]
+INFO: [Synth 8-3491] module 'Adder8' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:22' bound to instance 'adder' of component 'Adder8' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'Adder8' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:28]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'add_1' [C:/Users/Ioana/Desktop/scs/FullAdd.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'add_1' (1#1) [C:/Users/Ioana/Desktop/scs/FullAdd.vhd:26]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-3491] module 'add_1' declared at 'C:/Users/Ioana/Desktop/scs/FullAdd.vhd:22' bound to instance 'FullAdder' of component 'add_1' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Adder8' (2#1) [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:28]
+INFO: [Synth 8-3491] module 'Adder8' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/Riplle8.vhd:22' bound to instance 'Scaderea' of component 'Adder8' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:230]
+INFO: [Synth 8-3491] module 'AND_GATE' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AND_GATE.vhd:34' bound to instance 'andop' of component 'AND_GATE' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'AND_GATE' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AND_GATE.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'AND_GATE' (3#1) [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AND_GATE.vhd:40]
+INFO: [Synth 8-3491] module 'OR_GATE' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/OR_GATE.vhd:34' bound to instance 'ORop' of component 'OR_GATE' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:232]
+INFO: [Synth 8-638] synthesizing module 'OR_GATE' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/OR_GATE.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'OR_GATE' (4#1) [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/OR_GATE.vhd:40]
+INFO: [Synth 8-3491] module 'NOT_GATE' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/NOT_GATE.vhd:34' bound to instance 'NOTop' of component 'NOT_GATE' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:233]
+INFO: [Synth 8-638] synthesizing module 'NOT_GATE' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/NOT_GATE.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'NOT_GATE' (5#1) [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/NOT_GATE.vhd:39]
+INFO: [Synth 8-3491] module 'MultiplierComp' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:32' bound to instance 'multiplication' of component 'MultiplierComp' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'MultiplierComp' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:38]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha00' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'half_adder' (6#1) [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:40]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa00' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'add_2' [C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'add_2' (7#1) [C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:26]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa01' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:123]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa02' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:124]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha01' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:125]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa03' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:126]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa04' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:127]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa05' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:128]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa06' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:129]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa07' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:130]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa08' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:131]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha02' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:132]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa09' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:133]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa90' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:134]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa31' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:135]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa32' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:136]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa33' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:137]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha03' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:138]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa34' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:139]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa35' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:140]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha04' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:141]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha10' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:144]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa10' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:145]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa11' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:146]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa12' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:147]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa13' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:148]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha11' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:149]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa14' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:150]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha12' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:151]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa15' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:152]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa16' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:153]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa17' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:154]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa18' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:155]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa19' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:156]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha13' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:157]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha14' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:158]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha40' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:161]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha41' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:162]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa40' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:163]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa41' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:164]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa42' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:165]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa43' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:166]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa44' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:167]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa45' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:168]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa46' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:169]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha42' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:170]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha43' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:171]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa47' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:172]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha50' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:175]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa50' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:176]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa51' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:177]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa52' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:178]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa53' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:179]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa54' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:180]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa55' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:181]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa56' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:182]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa57' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:183]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa58' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:184]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa59' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:185]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha70' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:188]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa70' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:189]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa71' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:190]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha71' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:191]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha72' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:192]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha73' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:193]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha74' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:194]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/half_adder.vhd:33' bound to instance 'ha75' of component 'half_adder' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:195]
+INFO: [Synth 8-3491] module 'add_2' declared at 'C:/Users/Ioana/Desktop/scs/WALLACE/WALLACE.srcs/sources_1/new/add_2.vhd:22' bound to instance 'fa81' of component 'add_2' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:196]
+INFO: [Synth 8-256] done synthesizing module 'MultiplierComp' (8#1) [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/MultiplierComponent.vhd:38]
+INFO: [Synth 8-3491] module 'Division' declared at 'C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:10' bound to instance 'impartite' of component 'Division' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'Division' [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:23]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:41]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:57]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:67]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:100]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:110]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:176]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:204]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:224]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:232]
+INFO: [Synth 8-256] done synthesizing module 'Division' (9#1) [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:23]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/MPG.vhd:15' bound to instance 'enabling' of component 'MPG' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'MPG' [C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/MPG.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (10#1) [C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/MPG.vhd:21]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/MPG.vhd:15' bound to instance 'enabling2' of component 'MPG' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:237]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/MPG.vhd:15' bound to instance 'enabling3' of component 'MPG' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:238]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/MPG.vhd:15' bound to instance 'enabling4' of component 'MPG' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:239]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/MPG.vhd:15' bound to instance 'enabling5' of component 'MPG' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:240]
+INFO: [Synth 8-3491] module 'ACC' declared at 'C:/Users/Ioana/Desktop/scs/division/division.srcs/sources_1/new/ACC.vhd:35' bound to instance 'accumulator' of component 'ACC' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'ACC' [C:/Users/Ioana/Desktop/scs/division/division.srcs/sources_1/new/ACC.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'ACC' (11#1) [C:/Users/Ioana/Desktop/scs/division/division.srcs/sources_1/new/ACC.vhd:42]
+INFO: [Synth 8-3491] module 'RotateX' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/ShiftLeft.vhd:34' bound to instance 'rotate' of component 'RotateX' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:243]
+INFO: [Synth 8-638] synthesizing module 'RotateX' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/ShiftLeft.vhd:42]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/ShiftLeft.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/ShiftLeft.vhd:71]
+WARNING: [Synth 8-614] signal 'R' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/ShiftLeft.vhd:46]
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/ShiftLeft.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'RotateX' (12#1) [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/ShiftLeft.vhd:42]
+INFO: [Synth 8-3491] module 'RotateX' declared at 'C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/ShiftLeft.vhd:34' bound to instance 'rotate2' of component 'RotateX' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:244]
+INFO: [Synth 8-3491] module 'SSD' declared at 'C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/SSD.vhd:15' bound to instance 'afisare' of component 'SSD' [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:246]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/SSD.vhd:26]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/SSD.vhd:37]
+WARNING: [Synth 8-614] signal 'digit0' is read in the process but is not in the sensitivity list [C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/SSD.vhd:35]
+WARNING: [Synth 8-614] signal 'digit1' is read in the process but is not in the sensitivity list [C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/SSD.vhd:35]
+WARNING: [Synth 8-614] signal 'digit2' is read in the process but is not in the sensitivity list [C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/SSD.vhd:35]
+WARNING: [Synth 8-614] signal 'digit3' is read in the process but is not in the sensitivity list [C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/SSD.vhd:35]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/SSD.vhd:48]
+WARNING: [Synth 8-614] signal 'mid' is read in the process but is not in the sensitivity list [C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/SSD.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (13#1) [C:/Users/Ioana/project_6/project_6.srcs/sources_1/new/SSD.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'AluUnit' (14#1) [C:/Users/Ioana/Desktop/scs/ALU/ALU.srcs/sources_1/new/AluUnit.vhd:49]
+WARNING: [Synth 8-3331] design RotateX has unconnected port clk
+WARNING: [Synth 8-3331] design ACC has unconnected port enable
+WARNING: [Synth 8-3331] design Division has unconnected port Dividend[15]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[15]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[14]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[13]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[12]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[11]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[10]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[9]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[8]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[7]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[6]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[5]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[4]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[3]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[2]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[1]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[0]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[15]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[14]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[13]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[12]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[11]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[10]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[9]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[8]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[7]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[6]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[5]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[4]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[3]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[2]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[1]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[0]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port sel[4]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port sel[3]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port sel[2]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port sel[1]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port sel[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 365.742 ; gain = 155.465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 365.742 ; gain = 155.465
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Ioana/Desktop/Basys/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Ioana/Desktop/Basys/Basys3_Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Ioana/Desktop/Basys/Basys3_Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Ioana/Desktop/Basys/Basys3_Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Ioana/Desktop/Basys/Basys3_Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Ioana/Desktop/Basys/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Ioana/Desktop/Basys/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AluUnit_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AluUnit_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 664.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 664.551 ; gain = 454.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 664.551 ; gain = 454.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 664.551 ; gain = 454.273
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'FSM_cur_state_reg' in module 'Division'
+INFO: [Synth 8-5544] ROM "FSM_nx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FSM_nx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'Stop_reg' [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:181]
+WARNING: [Synth 8-327] inferring latch for variable 'Remainder_reg' [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:105]
+WARNING: [Synth 8-327] inferring latch for variable 'Quotient_reg' [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:104]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_Stop_reg' [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:228]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_REGShift_left0_reg' [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:84]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_nx_state_reg' [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:131]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_nx_state_reg' [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:131]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                            00001 |                              000
+                      s1 |                            00010 |                              001
+                      s3 |                            00100 |                              011
+                      s2 |                            01000 |                              010
+                      s4 |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'FSM_cur_state_reg' using encoding 'one-hot' in module 'Division'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_FSM_nx_state_reg' [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:131]
+WARNING: [Synth 8-327] inferring latch for variable 'NotOverflow_reg' [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'start_reg' [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_REGShift_left1_reg' [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:88]
+WARNING: [Synth 8-327] inferring latch for variable 'SUB_reg' [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:61]
+WARNING: [Synth 8-327] inferring latch for variable 'INC_CNT_reg' [C:/Users/Ioana/Desktop/scs/DivisionOperation.vhd:113]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 664.551 ; gain = 454.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 79    
+	   2 Input      1 Bit         XORs := 21    
++---Registers : 
+	               16 Bit    Registers := 5     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 7     
+	   4 Input     16 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AluUnit 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module add_1 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module half_adder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module add_2 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module Division 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+Module MPG 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module ACC 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module RotateX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module SSD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[15]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[14]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[13]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[12]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[11]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[10]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[9]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[8]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[7]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[6]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[5]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[4]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[3]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[2]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[1]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataA[0]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[15]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[14]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[13]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[12]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[11]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[10]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[9]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[8]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[7]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[6]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[5]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[4]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[3]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[2]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[1]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port dataB[0]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port sel[4]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port sel[3]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port sel[2]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port sel[1]
+WARNING: [Synth 8-3331] design AluUnit has unconnected port sel[0]
+INFO: [Synth 8-3886] merging instance 'impartite/DivReg_reg[0]' (FDE) to 'impartite/DivReg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'impartite/DivReg_reg[5]' (FDE) to 'impartite/DivReg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'impartite/DivReg_reg[6]' (FDE) to 'impartite/DivReg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'impartite/DivReg_reg[7]' (FDE) to 'impartite/DivReg_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\impartite/DivReg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'impartite/DivReg_reg[2]' (FDE) to 'impartite/DivReg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'impartite/DivReg_reg[3]' (FDE) to 'impartite/DivReg_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\impartite/DivReg_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (impartite/Counter_reg[4]) is unused and will be removed from module AluUnit.
+WARNING: [Synth 8-3332] Sequential element (impartite/DivReg_reg[4]) is unused and will be removed from module AluUnit.
+WARNING: [Synth 8-3332] Sequential element (impartite/DivReg_reg[1]) is unused and will be removed from module AluUnit.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 664.551 ; gain = 454.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 701.145 ; gain = 490.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 719.984 ; gain = 509.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 728.590 ; gain = 518.313
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 728.590 ; gain = 518.313
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 728.590 ; gain = 518.313
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 728.590 ; gain = 518.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 728.590 ; gain = 518.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 728.590 ; gain = 518.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 728.590 ; gain = 518.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     6|
+|3     |LUT1   |    41|
+|4     |LUT2   |    19|
+|5     |LUT3   |    29|
+|6     |LUT4   |    43|
+|7     |LUT5   |    60|
+|8     |LUT6   |   129|
+|9     |MUXF7  |     7|
+|10    |FDRE   |   124|
+|11    |LD     |    35|
+|12    |IBUF   |    22|
+|13    |OBUF   |    27|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+---------+------+
+|      |Instance      |Module   |Cells |
++------+--------------+---------+------+
+|1     |top           |         |   544|
+|2     |  accumulator |ACC      |   202|
+|3     |  enabling    |MPG      |    50|
+|4     |  enabling2   |MPG_0    |    20|
+|5     |  enabling3   |MPG_1    |     4|
+|6     |  enabling4   |MPG_2    |     3|
+|7     |  enabling5   |MPG_3    |     7|
+|8     |  impartite   |Division |   138|
++------+--------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 728.590 ; gain = 518.313
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 53 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 728.590 ; gain = 178.133
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 728.590 ; gain = 518.313
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 35 instances were transformed.
+  LD => LDCE: 35 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+171 Infos, 121 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 728.590 ; gain = 489.414
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ioana/Desktop/scs/ALU/ALU.runs/synth_1/AluUnit.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 728.590 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 09 22:04:37 2019...
