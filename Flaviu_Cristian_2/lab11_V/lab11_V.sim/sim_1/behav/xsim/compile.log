@@ -1,6 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Flaviu/Desktop/SCS/Lab11/DataMemory.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Data_Memory'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Flaviu/Desktop/SCS/Lab11/RAM.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Data_Ram'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Flaviu/Desktop/SCS/Lab11/Data_memory_sim.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Data_memory_sim'

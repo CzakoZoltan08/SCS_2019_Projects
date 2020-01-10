@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  "../../../../DivisionOperation.vhd"
-vhdl xil_defaultlib  "../../../../../DivisionTest.vhd"
-vhdl xil_defaultlib  "../../../../../../Downloads/DivisionTest.vhd"
-
-# Do not sort compile order
-nosort
