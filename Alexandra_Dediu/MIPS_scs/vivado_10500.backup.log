@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec 18 14:32:29 2019
+# Process ID: 10500
+# Current directory: C:/Users/Alexandra/Desktop/anu 3/VivadoProjects/MIPS_scs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3256 C:\Users\Alexandra\Desktop\anu 3\VivadoProjects\MIPS_scs\MIPS_scs.xpr
+# Log file: C:/Users/Alexandra/Desktop/anu 3/VivadoProjects/MIPS_scs/vivado.log
+# Journal file: C:/Users/Alexandra/Desktop/anu 3/VivadoProjects/MIPS_scs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Alexandra/Desktop/anu 3/VivadoProjects/MIPS_scs/MIPS_scs.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/softwares/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 743.613 ; gain = 101.516
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Dec 18 15:28:17 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Alexandra/Desktop/anu 3/VivadoProjects/MIPS_scs/MIPS_scs.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Dec 18 15:29:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Alexandra/Desktop/anu 3/VivadoProjects/MIPS_scs/MIPS_scs.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec 18 15:32:10 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Alexandra/Desktop/anu 3/VivadoProjects/MIPS_scs/MIPS_scs.runs/impl_1/runme.log
+open_hw
+open_hw: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 779.906 ; gain = 0.000
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A758BDA
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1918.957 ; gain = 1120.781
+set_property PROGRAM.FILE {C:/Users/Alexandra/Desktop/anu 3/VivadoProjects/MIPS_scs/MIPS_scs.runs/impl_1/test_env.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Alexandra/Desktop/anu 3/VivadoProjects/MIPS_scs/MIPS_scs.runs/impl_1/test_env.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1940.578 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A758BDA
+close_hw
+close_hw: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1956.078 ; gain = 14.520
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 18 16:07:28 2019...
