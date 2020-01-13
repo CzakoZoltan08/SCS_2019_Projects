@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\minut vlad\source\repos\threading\threading\source.cpp(26): warning C4101: 'mid_time': unreferenced local variable
+c:\users\minut vlad\source\repos\threading\threading\source.cpp(27): warning C4101: 'time_used_join': unreferenced local variable
+  Threading.vcxproj -> C:\Users\Minut Vlad\Source\Repos\Threading\Debug\Threading.exe
